@@ -1,8 +1,8 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
-import EntryForm from './entry-form'
+import BulkUploadForm from './bulk-upload-form'
 
-export default async function EntryPage() {
+export default async function BulkUploadPage() {
   const supabase = await createClient()
   const {
     data: { user },
@@ -22,5 +22,5 @@ export default async function EntryPage() {
     redirect('/')
   }
 
-  return <EntryForm />
+  return <BulkUploadForm />
 }

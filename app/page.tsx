@@ -29,7 +29,7 @@ export default async function Home() {
         </div>
 
         <p className="text-gray-600 mb-6">
-          অ্যাকাউন্ট: {user.email} {!isAdmin && <span className="text-xs text-gray-400">(শুধুমাত্র দেখার অনুমতি)</span>}
+          অ্যাকাউন্ট: {user.email}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
