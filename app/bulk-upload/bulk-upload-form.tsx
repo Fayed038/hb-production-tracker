@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
-import { parseWorkbook, type ParsedEntry } from './parser'
+import { parseWorkbook, type ParsedEntry } from '@/lib/bulk-upload/parser'
 
 type Machine = { id: string; name: string }
 type Employee = { id: string; name: string }
